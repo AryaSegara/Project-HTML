@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Ratatouille - Restaurant Food">
+    <meta name="description" content="This is a Restaurant Food ">
+    <title>RATATOUILLE - RESTAURANT FOOD</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../Assets/ratatouille-logo-transformed.png" type="image/svg+xml">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">RATATOUILLE</p>
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="container">
+            <address class="topbar-item">
+                <div class="icon">
+                    <i class="material-symbols-outlined">location_on</i>
+                </div>
+                <span class="span">
+                    Ratatouille Company , Pekanbaru City , Indonesia 9669 ADX
+                </span>
+            </address>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <i class="material-symbols-outlined">schedule</i>
+                </div>
+                <span class="span">Daily : 7.00 AM to 23.00 PM</span>
+            </div>
+            <a href="tel:+6282137395645" class="topbar-item link">
+                <div class="icon">
+                    <i class="material-symbols-outlined">call</i>
+                </div>
+                <span class="span">+62 821 3739 5645</span>
+            </a>
+
+            <a href="email:AryaSegara10@gmail.com" class="topbar-item link">
+                <div class="icon">
+                    <i class="material-symbols-outlined">mail</i>
+                </div>
+                <span class="span">AryaSegara10@gmail.com</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <h2 class="h-2">RATATOUILLE </h2>
+            </a>
+            <nav class="navbar" data-navbar>
+                <button class="close-btn " data-nav-toggler>
+                    <i class="material-symbols-outlined">close</i>
+                </button>
+                <a href="#" class="logo">
+                    <img src="../Assets/test.png" alt="Ratatouille - Home" class="img-logo">
+                </a>
+                <ul class="navbar-list">
+                    <!-- 1 -->
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+                    <!-- 2 -->
+                    <li class="navbar-item">
+                        <a href="menu.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+                            <span class="span">Menus</span>
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+                            <span class="span">About Us</span>
+                        </a>
+                    </li>
+                    <!-- 4 -->
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link hover-underline active">
+                            <div class="distance"></div>
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visit Us</p>
+                    <address class="container-4">
+                        Ratatouille Company , Pekanbaru City ,<br> Indonesia 9669 ADX
+                    </address>
+                    <p class="container-4 navbar-text">Open : 08.00 AM - 23.00 PM</p>
+                    <a href="email:AryaSegara10@gmail.com"
+                        class="container-4 sidebar-link">AryaSegara10@gmail.com</a>
+                    <div class="distance"></div>
+                    <p class="contact-label">Ratatouille Request</p>
+                    <a href="tel:+6282137395645" class="container-1 contact-number hover-underline">+62 821 3739
+                        5645</a>
+                </div>
+            </nav>
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Find A Table</span>
+                <span class="text text-2">Find A Table</span>
+            </a>
+            <button class="nav-open-btn" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+
+    <!-- Contact Us -->
+    <main>
+        <article>
+
+            <section class="contact-us">
+                <div class="container">
+
+                    <div class="form contact-us-form bg-black-10">
+
+                        <form action="" class="form-left">
+
+                            <h2 class="headline-1 text-center">Online Reservation</h2>
+
+                            <p class="form-text text-center">Booking Request
+                                <a href="tel:+6282137395645" class="link">+62 821-3739-5645</a>
+                                Or Fill Out The Order Form
+                            </p>
+
+                            <div class="input-wrapper">
+                                <input type="text" name="nama" placeholder="Your Name" autocomplete="off"
+                                    class="input-field">
+
+                                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off"
+                                    class="input-field">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <div class="icon-wrapper">
+                                    <i class="material-symbols-outlined">person</i>
+
+                                    <select name="person" class="input-field">
+                                        <option value="1-person">1 Person</option>
+                                        <option value="2-person">2 Person</option>
+                                        <option value="3-person">3 Person</option>
+                                        <option value="4-person">4 person</option>
+                                        <option value="5-person">5 person</option>
+                                        <option value="6-person">6 person</option>
+                                        <option value="7-person">7 person</option>
+                                    </select>
+                                    <i class="material-symbols-outlined">expand_more</i>
+
+                                </div>
+
+                                <div class="icon-wrapper">
+                                    <i class="material-symbols-outlined">calendar_month</i>
+
+                                    <input type="date" name="reservation-date" class="input-field">
+
+                                    <i class="material-symbols-outlined">expand_more</i>
+                                </div>
+
+                                <div class="icon-wrapper">
+                                    <i class="material-symbols-outlined">schedule</i>
+                                    <select name="person" class="input-field">
+                                        <option value="08:00am">08 : 00 am</option>
+                                        <option value="09:00am">09 : 00 am</option>
+                                        <option value="10:00am">10 : 00 am</option>
+                                        <option value="11:00am">11 : 00 am</option>
+                                        <option value="12:00am">12 : 00 am</option>
+                                        <option value="01:00pm">01 : 00 pm</option>
+                                        <option value="02:00pm">02 : 00 pm</option>
+                                        <option value="03:00pm">03 : 00 pm</option>
+                                        <option value="04:00pm">04 : 00 pm</option>
+                                        <option value="05:00pm">05 : 00 pm</option>
+                                        <option value="06:00pm">06 : 00 pm</option>
+                                        <option value="07:00pm">07 : 00 pm</option>
+                                        <option value="08:00pm">08 : 00 pm</option>
+                                        <option value="09:00pm">09 : 00 pm</option>
+                                        <option value="10:00pm">10 : 00 pm</option>
+                                    </select>
+                                    <i class="material-symbols-outlined">expand_more</i>
+                                </div>
+
+
+                            </div>
+
+                            <textarea name="message" placeholder="message" autocomplete="off"
+                                class="input-field"></textarea>
+
+                            <button type="submit" class="btn btn-secondary">
+
+                                <span class="text text-1">Book A Table</span>
+                                <span class="text text-2">Book A Table</span>
+
+                            </button>
+                        </form>
+
+                        <div class="form-right text-center">
+
+                            <h2 class="headline-1 text-center">Contact</h2>
+
+                            <p class="contact-label">Booking Request</p>
+
+                            <a href="tel:+6282137395645" class="container-1 contact-number hover-underline">+62 821 3739
+                                5645</a>
+
+                            <div class="distance"></div>
+
+                            <p class="contact-label">Location</p>
+
+                            <address class="container-4">Ratatouille Company , Pekanbaru City ,<br> Indonesia 9669 ADX
+                            </address>
+
+                            <p class="contact-label">Lunch Time</p>
+                            <p class="container-4">Monday To Sunday <br>11.00 AM - 14.00 PM</p>
+                            <p class="contact-label">Dinner Time</p>
+                            <p class="container-4">Monday To Sunday <br>20.00 PM - 23.30 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- File JavaScript -->
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/loading.js"></script>
+    <script src="../JavaScript/navbar.js"></script>
+</body>
+
+</html>

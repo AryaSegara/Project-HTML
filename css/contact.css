@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap);
+
+/* COSTUM PROPERTI */
+:root {
+    /* COLORS */
+    --background-color: rgb(76, 139, 207);
+    --white: white;
+    --black: hsla(0, 0%, 0%, 1);
+    --black-1: rgb(24, 23, 21);
+
+    /* FONT FAMILY */
+    --fontFamily-forum: 'Forum', cursive;
+    --fontFamily-dm_sans: 'DM Sans', sans-serif;
+
+    /* FONT WIGHT */
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    /* SHADOW */
+    --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+    /* BORDER RADIUS */
+    --radius-24: 24px;
+    --radius-circle: 50%;
+
+    /* TRANSITION */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+
+/* Contact */
+.contact-us .container {
+    padding-top: 130px;
+    background-color: var(--black-1);
+}
+
+.contact-us-form {
+    margin-block-start: 50px;
+}
+
+.form-text {
+    margin-block-end: 40px;
+}
+
+.form-text .link {
+    display: inline;
+    color: var(--background-color);
+}
+
+.form-right{
+    background-image: url(../Assets/form-pattern.png);
+}
+
+.form-right .headline-1 {
+    margin-block-end: 40px;
+}
+
+.form-right .contact-label {
+    margin-block-end: 5px;
+}
+
+.form-right .distance {
+    margin: 20px auto;
+}
+
+.form-right .container-4 {
+    color: hsla(0, 0%, 65%, 1);
+    line-height: 1.6em;
+}
+
+.form-right .container-4:not(:last-child) {
+    margin-block-end: 25px;
+}
+
+.form-left,
+.form-right {
+    padding: 40px 20px 30px;
+}
+
+.input-field[type="date"] {
+    text-transform: uppercase;
+    padding-inline-end: 10px;
+}
+
+.input-field[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+textarea.input-field {
+    resize: none;
+    height: 140px;
+    padding-block: 20px;
+    line-height: 1em;
+}
+
+.form-left .btn {
+    max-width: 100%;
+    width: 100%;
+}
+
+.form-right {
+    background-repeat: repeat;
+    background-position: top left;
+}

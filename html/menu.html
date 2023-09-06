@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Ratatouille - Restaurant Food">
+    <meta name="description" content="This is a Restaurant Food ">
+    <title>RATATOUILLE - RESTAURANT FOOD</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../Assets/ratatouille-logo-transformed.png" type="image/svg+xml">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">RATATOUILLE</p>
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="container">
+            <address class="topbar-item">
+                <div class="icon">
+                    <i class="material-symbols-outlined">location_on</i>
+                </div>
+                <span class="span">
+                    Ratatouille Company , Pekanbaru City , Indonesia 9669 ADX
+                </span>
+            </address>
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <i class="material-symbols-outlined">schedule</i>
+                </div>
+                <span class="span">Daily : 7.00 AM to 23.00 PM</span>
+            </div>
+            <a href="tel:+6282137395645" class="topbar-item link">
+                <div class="icon">
+                    <i class="material-symbols-outlined">call</i>
+                </div>
+                <span class="span">+62 821 3739 5645</span>
+            </a>
+
+            <a href="email:AryaSegara10@gmail.com" class="topbar-item link">
+                <div class="icon">
+                    <i class="material-symbols-outlined">mail</i>
+                </div>
+                <span class="span">AryaSegara10@gmail.com</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <h2 class="h-2">RATATOUILLE </h2>
+            </a>
+            <nav class="navbar" data-navbar>
+                <button class="close-btn " data-nav-toggler>
+                    <i class="material-symbols-outlined">close</i>
+                </button>
+                <a href="#" class="logo">
+                    <img src="../Assets/test.png" alt="Ratatouille - Home" class="img-logo">
+                </a>
+                <ul class="navbar-list">
+                    <!-- 1 -->
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+                    <!-- 2 -->
+                    <li class="navbar-item">
+                        <a href="menu.html" class="navbar-link hover-underline active">
+                            <div class="distance"></div>
+                            <span class="span">Menus</span>
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+                            <span class="span">About Us</span>
+                        </a>
+                    </li>
+                    <!-- 4 -->
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visit Us</p>
+                    <address class="container-4">
+                        Ratatouille Company , Pekanbaru City ,<br> Indonesia 9669 ADX
+                    </address>
+                    <p class="container-4 navbar-text">Open : 08.00 AM - 23.00 PM</p>
+                    <a href="email:AryaSegara10@gmail.com"
+                        class="container-4 sidebar-link">AryaSegara10@gmail.com</a>
+                    <div class="distance"></div>
+                    <p class="contact-label">Ratatouille Request</p>
+                    <a href="tel:+6282137395645" class="container-1 contact-number hover-underline">+62 821 3739
+                        5645</a>
+                </div>
+            </nav>
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Find A Table</span>
+                <span class="text text-2">Find A Table</span>
+            </a>
+            <button class="nav-open-btn" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <main>
+        <article>
+
+            <section class="section menu">
+                <div class="container" id="container-menu">
+                    <p class="section-subtitle text-center label-2 menu-special reveal">Special Selection</p>
+                    <h2 class="headline-1 section-title text-center reveal">Delicious Menu</h2>
+
+                    <ul class="grid-list reveal" id="menu-menu">
+                        <!-- Creat element to JavaScript -->
+                        <!-- <li>
+                            <div class="menu-card hover:card">
+                                <figure class="card-banner img-holder">
+                                    <img src="" alt="Greek salad" class="img-cover">
+                                </figure>
+                                <div>
+                                    <div class="title-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="card-title"></a>
+                                        </h3>
+                                        <span class="badge label-1">Seasonal</span>
+                                        <span class="span title-2"></span>
+                                    </div>
+                                    <p class="card-text label-1"></p>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+
+                    <p class="menu-text text-center">
+                        Open Hours <span class="span">7.00 pm</span>
+                        to <span class="span">9.00 pm</span>
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        <span class="text text-1">View All Menu</span>
+                        <span class="text text-2">Viem All Menu</span>
+                    </a>
+                    <img src="../Assets/shape-5-new.png" alt="" class="shape shape-2 move-anim">
+                    <img src="../Assets/shape-6-new.png" alt="" class="shape shape-3 move-anim">
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- file JavaScript -->
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/loading.js"></script>
+    <script src="../JavaScript/navbar.js"></script>
+    <script src="../JavaScript/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap);
+
+/* COSTUM PROPERTI */
+:root {
+    /* COLORS */
+    --background-color : rgb(76, 139, 207);
+    --white: white;
+    --black: hsla(0, 0%, 0%, 1);
+    --black-1: rgb(24, 23, 21);
+
+    /* FONT FAMILY */
+    --fontFamily-forum :'Forum' , cursive;
+    --fontFamily-dm_sans : 'DM Sans' , sans-serif;
+
+    /* FONT WIGHT */
+    --weight-regular : 400;
+    --weight-bold : 700;
+
+    /* SHADOW */
+    --shadow-1: 0px 0px 25px 0px hsla(0,0%,0%,0.25);
+
+    /* BORDER RADIUS */
+    --radius-24:24px;
+    --radius-circle:50%;
+
+    /* TRANSITION */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+
+/* Menu */
+.menu .container{
+    padding-top: 150px;
+}
+
+.menu .section-title {
+    margin-block-end: 40px;
+}
+
+.menu .grid-list{
+    margin-block-end: 50px;
+}
+
+.menu-card-wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hover-card-wrapper .card-banner{
+    background-color: var(--white);
+}
+
+.hover-card-wrapper .card-banner .img-cover{
+    transition: var(--transition-2);
+}
+
+.menu-card-wrapper .img-cover{
+    width: 100px;
+    height: 100px;
+}
+
+.hover-card-wrapper:is(:hover, :focus-within) .card-banner .img-cover{
+    opacity: 0.7;
+    /* 1.2 */
+    transform: scale(1.05);
+}
+
+.menu-card-wrapper .card-banner{
+    flex-shrink: 0;
+    border-radius: var(--radius-24);
+}
+
+.menu-card-wrapper .card-title{
+    font-size: 30px;
+    transition: var(--transition-1);
+}
+
+.menu-card-wrapper .card-title:is(:hover,:focus-visible){
+    color: var(--background-color);
+}
+
+.menu-card-wrapper .badge{
+    background-color: var(--background-color);
+    color:  hsla(210, 4%, 9%, 1);
+    font-family: var(--fontFamily-forum);
+    max-width: max-content;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    padding-inline: 10px;
+    margin-block-start: 10px;
+}
+
+.menu-card-wrapper .span{
+    color: var(--background-color);
+    margin-block: 10px;
+}
+
+.menu-card-wrapper .card-text{
+    color: silver;
+    line-height: 1.6em;
+}
+
+.menu-text .span{
+    display: inline-block;
+    color: var(--background-color);
+}
+
+.menu .btn{
+    margin-inline: auto;
+    margin-block-start: 26px;
+}
+
+.menu .shape{
+    display: block;
+    width: 70%;
+}
+
+.menu .shape-2{
+    /* 15% */
+    top: 0;
+    left: 0;
+}
+
+.menu .shape-3{
+    bottom: 0;
+    right: 0;
+}
+
+.reveal {
+    transform: translateY(30);
+    opacity: 0;
+}
+
+.menu .reveal {
+    animation: smothh 1s ease forwards;
+}
+
+.menu .section-subtitle {
+    animation-delay: 1000ms;
+}
+
+.menu .section-title {
+    animation-delay: 1500ms;
+}
+
+.menu .grid-list {
+    animation-delay: 2.5    s;
+}
+
+@keyframes smothh {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

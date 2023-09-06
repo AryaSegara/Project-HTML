@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Ratatouille - Restaurant Food">
+    <meta name="description" content="This is a Restaurant Food ">
+    <title>RATATOUILLE - RESTAURANT FOOD</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../Assets/ratatouille-logo-transformed.png" type="image/svg+xml">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/picture.css">
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">RATATOUILLE</p>
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="container">
+            <address class="topbar-item">
+                <div class="icon">
+                    <i class="material-symbols-outlined">location_on</i>
+                </div>
+
+                <span class="span">
+                    Ratatouille Company , Pekanbaru City , Indonesia 9669 ADX
+                </span>
+            </address>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <i class="material-symbols-outlined">schedule</i>
+                </div>
+
+                <span class="span">Daily : 7.00 AM to 23.00 PM</span>
+            </div>
+            <a href="tel:+6282137395645" class="topbar-item link">
+                <div class="icon">
+                    <i class="material-symbols-outlined">call</i>
+                </div>
+
+                <span class="span">+62 821 3739 5645</span>
+            </a>
+            <a href="email:AryaSegara10@gmail.com" class="topbar-item link">
+                <div class="icon">
+                    <i class="material-symbols-outlined">mail</i>
+                </div>
+                <span class="span">AryaSegara10@gmail.com</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" data-header>
+
+        <div class="container">
+            <a href="#" class="logo">
+                <h2 class="h-2">RATATOUILLE </h2>
+            </a>
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn " data-nav-toggler>
+                    <i class="material-symbols-outlined">close</i>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="../Assets/test.png" alt="Ratatouille - Home" class="img-logo">
+                </a>
+
+                <ul class="navbar-list">
+                    <!-- 1 -->
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link hover-underline active">
+                            <div class="distance"></div>
+
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+                    <!-- 2 -->
+                    <li class="navbar-item">
+                        <a href="menu.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+
+                            <span class="span">Menus</span>
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+
+                            <span class="span">About Us</span>
+                        </a>
+                    </li>
+                    <!-- 4 -->
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link hover-underline">
+                            <div class="distance"></div>
+
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visit Us</p>
+
+                    <address class="container-4">
+                        Ratatouille Company , Pekanbaru City ,<br> Indonesia 9669 ADX
+                    </address>
+
+                    <p class="container-4 navbar-text">Open : 08.00 AM - 23.00 PM</p>
+
+                    <a href="email:AryaSegara10@gmail.com" class="container-4 sidebar-link">AryaSegara10@gmail.com</a>
+
+                    <div class="distance"></div>
+
+                    <p class="contact-label">Ratatouille Request</p>
+
+                    <a href="tel:+6282137395645" class="container-1 contact-number hover-underline">+62 821 3739
+                        5645</a>
+                </div>
+
+            </nav>
+
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Find A Table</span>
+                <span class="text text-2">Find A Table</span>
+            </a>
+
+            <button class="nav-open-btn" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <!-- Picture Slide-->
+            <section class="picture text-center" id="home">
+
+                <ul class="picture-slider" data-picture-slider>
+                    <!-- 1 -->
+                    <li class="slider-item active" data-picture-slider-item>
+                        <div class="slider-bg">
+                            <img src="../Assets/slider-1-ratatouille.jpg" class="img-cover" id="img-slide">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">Ratatouille</p>
+
+                        <h1 class="display-1 picture-title slider-reveal">Super Delicious Food<br>For everyone</h1>
+
+                        <p class="container-2 picture-text slider-reveal">Come With Family & Feel Delicious Food</p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our New</span>
+                            <span class="text text-2">View Our New</span>
+                        </a>
+
+                    </li>
+
+                    <!-- 2 -->
+                    <li class="slider-item" data-picture-slider-item>
+                        <div class="slider-bg">
+                            <img src="../Assets/hero-slider-2.jpg" class="img-cover" id="img-slide">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">Delightful</p>
+
+                        <h1 class="display-1 picture-title slider-reveal">Flavors Inspired by <br>the seasons </h1>
+
+                        <p class="container-2 picture-text slider-reveal">Come With Family & Feel Delicious Food</p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our New</span>
+                            <span class="text text-2">View Our New</span>
+                        </a>
+                    </li>
+
+                    <!-- 3 -->
+                    <li class="slider-item" data-picture-slider-item>
+                        <div class="slider-bg">
+                            <img src="../Assets/hero-slider-1.jpg" class="img-cover" id="img-slide">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">Amazing & Delicious</p>
+
+                        <h1 class="display-1 picture-title slider-reveal">Where Every Taste <br>Has A Story</h1>
+
+                        <p class="container-2 picture-text slider-reveal">Come With Family & Feel the joy Food</p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our New</span>
+                            <span class="text text-2">View Our New</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button class="slider-btn prev" data-prev-btn>
+                    <i class="material-symbols-outlined">arrow_back_ios</i>
+                </button>
+
+                <button class="slider-btn next" data-next-btn>
+                    <i class="material-symbols-outlined">arrow_forward_ios</i>
+                </button>
+
+                <a href="#" class="picture-btn has-after">
+                    <img src="../Assets/hero-icon.png" alt="booking icon">
+                    <span class="label-2 text-center span">Book A Table</span>
+                </a>
+            </section>
+
+            <!-- Service -->
+            <section class="section service bg-black-10 text-center">
+                <div class="container">
+                    <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+                    <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+                    <p class="section-text">Penawaran “Top Notch” ini mungkin menjadi minat 
+                        khusus pelanggan atau tamu, karena memberikan pengalaman kuliner yang 
+                        istimewa dengan menawarkan pilihan hidangan dan minuman terbaik dari 
+                        setiap kategori. Dengan begitu, mereka dapat menikmati berbagai menu 
+                        berkualitas dan menggugah selera dengan harga yang lebih baik..
+                    </p>
+
+                    <!-- Card -->
+                    <ul class="grid-list">
+                        <!-- 1 -->
+                        <li>
+                            <div class="service-card">
+
+                                <a href="#" class="has-before hover-shine">
+                                    <figure class="card-banner img-holder">
+                                        <img src="../Assets/service-1.jpg" alt="Breakfast"
+                                            class="img-cover" id="img-breakfast">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+                                    <h3 class="title-4 card-title">
+                                        <a href="#">Breakfast</a>
+                                    </h3>
+                                    <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <!-- 2 -->
+                        <li>
+                            <div class="service-card">
+
+                                <a href="#" class="has-before hover-shine">
+                                    <figure class="card-banner img-holder">
+                                        <img src="../Assets/service-2.jpg" alt="Breakfast" class="img-cover" id="img-breakfast">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+                                    <h3 class="title-4 card-title">
+                                        <a href="#">Appetizers</a>
+                                    </h3>
+                                    <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <!-- 3 -->
+                        <li>
+                            <div class="service-card">
+
+                                <a href="#" class="has-before hover-shine">
+                                    <figure class="card-banner img-holder">
+                                        <img src="../Assets/service-3.jpg" alt="Breakfast" class="img-cover" id="img-breakfast">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+                                    <h3 class="title-4 card-title">
+                                        <a href="#">Drinks</a>
+                                    </h3>
+                                    <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <img src="../Assets/shape-1.png" alt="shape" class="shape shape-1 move-anim" id="shape-img">
+                    <img src="../Assets/shape-2.png" alt="shape" class="shape shape-2 move-anim" id="shape-img">
+                </div>
+            </section>
+
+            <!-- Sepecial Food-->
+            <section class="special-dish text-center">
+
+                <div class="special-dish-banner">
+                    <img src="../Assets/special-dish-banner.jpg" alt="special dish" class="img-cover">
+                </div>
+
+                <div class="special-dish-content bg-black-10">
+                    <div class="container">
+
+                        <img src="../Assets/badge-1.png" alt="badge" class="abs-img">
+
+                        <p class="section-subtitle label-2">Special Dish</p>
+
+                        <h2 class="headline-1 section-title">Lobster Tortellini</h2>
+
+                        <p class="section-text">Lobster Tortelli merupakan sajian makanan yang lezat dan mewah. 
+                            "Tortelli" adalah variasi pasta Prancis yang mirip dengan ravioli, yaitu pasta berbentuk 
+                            persegi atau segitiga yang diisi dengan berbagai bahan. Untuk Lobster Tortelli, pasta ini 
+                            diisi dengan daging lobster yang lezat dan lezat. Hidangan Lobster Tortelli adalah hidangan 
+                            mewah dan menggiurkan. Rasanya yang lembut dan tekstur pasta yang gurih, berpadu dengan 
+                            gurihnya daging lobster, menciptakan kombinasi yang memikat lidah siapapun yang mencobanya.
+                             Hidangan ini sering dianggap sebagai hidangan spesial yang cocok untuk perayaan atau acara-acara khusus.
+                        </p>
+
+                        <div class="wrapper">
+                            <del class="del container-3">$50.00</del>
+                            <span class="span container-1">$20.00</span>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">
+                            <span class="text text-1">View All Menu</span>
+                            <span class="text text-2">View All Menu</span>
+                        </a>
+                    </div>
+
+                </div>
+                <img src="../Assets/shape-4.png" class="shape shape-1">
+                <img src="../Assets/shape-9.png" class="shape shape-2">
+            </section>
+
+            <!-- Restaurant Feature-->
+            <section class="section features text-center">
+                <div class="container">
+
+                    <p class="section-subtitle label-2">Why Choose Us</p>
+
+                    <h2 class="headline-1 section-title">Our Strength</h2>
+
+                    <ul class="grid-list">
+
+                        <li class="feature-item">
+                            <div class="feature-card">
+
+                                <div class="card-icon">
+                                    <img src="../Assets/features-icon-1.png" alt="icon" id="feature-img">
+                                </div>
+                                <h3 class="title-2 card-title">Hygienic Food</h3>
+                                <p class="label-1 card-text">Makanan higienis adalah makanan 
+                                    yang dijaga kebersihannya dengan hati-hati dan disiapkan 
+                                    dengan cara yang higienis. Konsep kebersihan dan kesehatan 
+                                    sangat penting untuk mencegah kontaminasi dan penyebaran penyakit melalui makanan.</p>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-card">
+                                <div class="card-icon">
+                                    <img src="../Assets/features-icon-2.png" alt="icon" id="feature-img">
+                                </div>
+                                <h3 class="title-2 card-title">Fresh Environment</h3>
+                                <p class="label-1 card-text">Fresh Environment mengacu pada kondisi lingkungan yang bersih, sehat dan menyegarkan. 
+                                    Istilah ini dapat digunakan untuk menggambarkan banyak jenis lingkungan, seperti ruangan, udara luar ruangan, area alami, 
+                                    atau tempat di mana orang tinggal atau bekerja.</p>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-card">
+                                <div class="card-icon">
+                                    <img src="../Assets/features-icon-3.png" alt="icon" id="feature-img">
+                                </div>
+                                <h3 class="title-2 card-title">Skilled Chefs</h3>
+                                <p class="label-1 card-text">Skilled Chefs adalah yang memiliki keterampilan tinggi 
+                                    dan kemampuan ahli dalam memasak. Mereka adalah para profesional di bidang kuliner yang memiliki pengalaman dan 
+                                    pengetahuan luas, presentasi yang indah, serta memahami beragam jenis makanan</p>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-card">
+                                <div class="card-icon">
+                                    <img src="../Assets/features-icon-4.png" alt="icon" id="feature-img">
+                                </div>
+                                <h3 class="title-2 card-title">Event & Party</h3>
+                                <p class="label-1 card-text">"Event & Party dalam restoran" menyediakan layanan khusus untuk acara dan pesta
+                                     yang diadakan di sebuah restoran. Banyak restoran menawarkan fasilitas dan pelayanan khusus untuk menyelenggarakan acara 
+                                     seperti ulang tahun, resepsi, pertemuan bisnis dan acara keluarga</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <img src="../Assets/shape-7.png" alt="shape" class="shape shape-1">
+                    <img src="../Assets/shape-8.png" alt="shape" class="shape shape-2">
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer section has-bg-image text-center">
+                <div class="container">
+
+                    <div class="footer-top grid-list">
+
+                        <div class="footer-brand has-before has-after">
+
+                            <a href="#" class="logo">
+                                <img src="../Assets/test.png" alt="Ratatouille-home" class="img-logo">
+                            </a>
+
+                            <address class="container-4">
+                                Ratatouille Company , Pekanbaru City , Indonesia 9669 ADX
+                            </address>
+
+                            <a href="email:AryaSegara10@gmail.com"
+                                class="container-4 contact-link">AryaSegara10@gmail.com</a>
+
+                            <a href="tel:+6282137395645" class="container-4 contact-link">Booking Request : +62 821 3739
+                                5645</a>
+
+                            <p class="container-4">
+                                Open : 08:00 am - 23:00 pm
+                            </p>
+
+                            <div class="wrapper">
+                                <div class="distance"></div>
+                                <div class="distance"></div>
+                                <div class="distance"></div>
+                            </div>
+
+                            <p class="title-1">Get News & Offers</p>
+
+                            <p class="label-1">
+                                Subscribe us & Get <span class="span">25% Off.</span>
+                            </p>
+
+                            <form action="" class="input-wrapper">
+                                <div class="icon-wrapper">
+                                    <i class="material-symbols-outlined">mail</i>
+
+                                    <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+                                </div>
+
+                                <button type="submit" class="btn btn-secondary">
+                                    <span class="text text-1">Subscribe</span>
+                                    <span class="text text-2">Subscribe</span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <ul class="footer-list">
+                            <li>
+                                <a href="index.html" class="label-2 footer-link hover-underline">Home</a>
+                            </li>
+                            <li>
+                                <a href="menu.html" class="label-2 footer-link hover-underline">Menus</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="label-2 footer-link hover-underline">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="label-2 footer-link hover-underline">Contact</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://id-id.facebook.com/" class="label-2 footer-link hover-underline">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" class="label-2 footer-link hover-underline">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/AryaSegara" class="label-2 footer-link hover-underline">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC63-KyjoUi4uLY-CpJkDYOg" class="label-2 footer-link hover-underline">Youtube</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <p class="copyright">
+                            &copy; 2023 Ratatouille. All Rights Reserved | By Arya Segara
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
+
+            <!-- - #BACK TO TOP -->
+            <a href="#top" class="back-top-btn active" data-back-top-btn>
+                <i class="material-symbols-outlined">expand_less</i>
+            </a>
+        </article>
+    </main>
+
+    <!-- File JavaScript -->
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/loading.js"></script>
+    <script src="../JavaScript/navbar.js"></script>
+    <script src="../JavaScript/slide.js"></script>
+</body>
+
+</html>

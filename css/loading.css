@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap);
+
+/* COSTUM PROPERTI */
+:root {
+    /* COLORS */
+    --background-color : rgb(76, 139, 207);
+    --white: white;
+    --black: hsla(0, 0%, 0%, 1);
+    --black-1: rgb(24, 23, 21);
+
+    /* FONT FAMILY */
+    --fontFamily-forum :'Forum' , cursive;
+    --fontFamily-dm_sans : 'DM Sans' , sans-serif;
+
+    /* FONT WIGHT */
+    --weight-regular : 400;
+    --weight-bold : 700;
+
+    /* SHADOW */
+    --shadow-1: 0px 0px 25px 0px hsla(0,0%,0%,0.25);
+
+    /* BORDER RADIUS */
+    --radius-24:24px;
+    --radius-circle:50%;
+
+    /* TRANSITION */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+
+/*   Loading   */
+.preload{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-color);
+    z-index: 10;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    transition: var(--transition-2);
+}
+.preload > * { transition: var(--transition-1); }
+
+.preload.loaded > * { opacity: 0; }
+
+.preload.loaded{
+    transition-delay: 250ms;
+    transform: translateY(100%);
+}
+
+.circle{
+    width: 112px;
+    height: 112px;
+    border-radius: var(--radius-circle);
+    border: 3px solid var(--white);
+    border-block-start-color: var(--black);
+    margin-block-end: 45px;
+    animation: rotate360 1s linear infinite;
+}
+
+.preload .text{
+    background-image: linear-gradient(90deg ,transparent 0% 16.66%, var(--black) 33.33% 50% ,transparent 66.66% 75%);
+    background-size: 500%;
+    font-size: calc(2rem + 3vw);
+    font-weight: var(--weight-bold);
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+    padding-inline-start: 14px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px hsla(180, 2%, 8%, 1);
+    animation: loadingText linear 2s infinite;
+}
+
+@keyframes rotate360{
+    0% { transform: rotate(0); }
+    100% { transform: rotate(1turn); }
+}
+
+@keyframes loadingText{
+    0%{ background-position: 100%; }
+    100% { background-position: 0%;}
+}

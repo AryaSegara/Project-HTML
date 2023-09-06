@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap);
+
+/* COSTUM PROPERTI */
+:root {
+    /* COLORS */
+    --background-color: rgb(76, 139, 207);
+    --white: white;
+    --black: hsla(0, 0%, 0%, 1);
+    --black-1: rgb(24, 23, 21);
+
+    /* FONT FAMILY */
+    --fontFamily-forum: 'Forum', cursive;
+    --fontFamily-dm_sans: 'DM Sans', sans-serif;
+
+    /* FONT WIGHT */
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    /* SHADOW */
+    --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+    /* BORDER RADIUS */
+    --radius-24: 24px;
+    --radius-circle: 50%;
+
+    /* TRANSITION */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+
+/* HEADER OR NAVBAR */
+.header .btn {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding-block: 40px;
+    z-index: 4;
+    border-block-end: 1px solid transparent;
+    transition: var(--transition-1);
+}
+
+.header.active {
+    position: absolute;
+    padding-block: 20px;
+    background-color: hsla(0, 0%, 13%, 1);
+    border-color: hsla(0, 0%, 0%, 0.15);
+}
+
+.header.hide {
+    transform: translateY(-100%);
+    transition-delay: 250ms;
+}
+
+.header .container {
+    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-open-btn {
+    padding: 12px;
+    padding-inline-end: 0;
+}
+
+.nav-open-btn .line {
+    width: 30px;
+    height: 2px;
+    background-color: var(--background-color);
+    margin-block: 4px;
+    transform-origin: left;
+    animation: menuBtn 400ms ease-in-out alternate infinite;
+}
+
+.nav-open-btn .line-2 {
+    animation-delay: 150ms;
+}
+
+.nav-open-btn .line-3 {
+    animation-delay: 300ms;
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgb(24, 23, 21);
+    top: 0;
+    left: -360px;
+    bottom: 0;
+    max-width: 360px;
+    width: 100%;
+    padding-inline: 30px;
+    padding-block-end: 50px;
+    overflow-y: auto;
+    visibility: hidden;
+    z-index: 2;
+    transition: var(--transition-2);
+}
+
+.navbar.active {
+    visibility: visible;
+    transform: translateX(360px);
+}
+
+.navbar .close-btn {
+    color: var(--white);
+    margin-inline-start: auto;
+    margin-block: 30px 20px;
+}
+
+.navbar .close-btn:is(:hover, :focus-visible) {
+    color: var(--background-color);
+}
+
+.navbar .logo {
+    max-width: max-content;
+    margin-inline: auto;
+    margin-block-end: 60px;
+}
+
+.logo .img-logo {
+    width: 160px;
+    height: 50px;
+}
+
+.navbar-list {
+    border-block-end: 1px solid hsla(193, 18%, 48%, 0.954);
+    margin-block-end: 100px;
+}
+
+.navbar-item {
+    border-block-start: 1px solid hsla(193, 18%, 48%, 0.954);
+}
+
+.navbar-link {
+    position: relative;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-block: 10px;
+    max-width: unset;
+}
+
+.navbar-link::after {
+    display: none;
+}
+
+.navbar-link .span {
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .span {
+    color: var(--background-color);
+    font-style: italic;
+    transform: translateX(20px);
+}
+
+.navbar-link .distance {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(45deg);
+    opacity: 0;
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .distance {
+    opacity: 1;
+}
+
+.navbar-title {
+    margin-block-end: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--background-color);
+}
+
+.navbar-text {
+    margin-block: 10px;
+}
+
+.navbar .container-4 {
+    color: var(--white);
+}
+
+.sidebar-link {
+    transition: var(--transition-1);
+}
+
+.sidebar-link:is(:hover, :focus-visible) {
+    color: var(--background-color);
+}
+
+.navbar .text-center .distance {
+    margin-block: 30px;
+    margin-inline: auto;
+}
+
+.navbar .contact-label {
+    margin-block-end: 10px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-2);
+    z-index: 1;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.h-2 {
+    position: relative;
+    font-size: 30px;
+    color: var(--black-1);
+    text-transform: uppercase;
+}
+
+.h-2::before {
+    content: "RATATOUILLE";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: var(--background-color);
+    -webkit-text-stroke: 0vw var(--black-1);
+    border-right: 1px solid var(--background-color);
+    overflow: hidden;
+    animation: loadingLogo 5s linear infinite;
+}
+
+@keyframes loadingLogo {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+@keyframes menuBtn {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0.3);
+    }
+}

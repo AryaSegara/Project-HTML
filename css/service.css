@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap);
+
+/* COSTUM PROPERTI */
+:root {
+    /* COLORS */
+    --background-color : rgb(76, 139, 207);
+    --white: white;
+    --black: hsla(0, 0%, 0%, 1);
+    --black-1: rgb(24, 23, 21);
+
+    /* FONT FAMILY */
+    --fontFamily-forum :'Forum' , cursive;
+    --fontFamily-dm_sans : 'DM Sans' , sans-serif;
+
+    /* FONT WIGHT */
+    --weight-regular : 400;
+    --weight-bold : 700;
+
+    /* SHADOW */
+    --shadow-1: 0px 0px 25px 0px hsla(0,0%,0%,0.25);
+
+    /* BORDER RADIUS */
+    --radius-24:24px;
+    --radius-circle:50%;
+
+    /* TRANSITION */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+
+/* Service */
+.service .section-title {
+     margin-block-end: 16px; 
+}
+
+.service .section-text { 
+    margin-block-end: 40px; 
+}
+
+.service-card { 
+    overflow: hidden; 
+}
+
+.service-card .has-before{
+    padding-block-end: 30px ;
+    margin-block-end: 26px;
+    z-index: 1;
+}
+
+.service-card .has-before::before{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 100%;
+    background-image: url('../Assets/img-pattern.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    transition: var(--transition-2);
+    transition-delay: 0;
+    z-index: -1;
+    will-change: transfrom;
+}
+
+.service-card:is(:hover, :focus-visible) .has-before::before{
+    transform: rotateY(0.5turn) translateX(50%);
+    transition-delay: 300ms;
+}
+
+.service-card .card-benner { 
+    transition: var(--transition-2);
+}
+
+.service-card:is(:hover, :focus-within) .card-benner {
+     transform: scale(1.05);
+}
+
+.service .card-title{
+    margin-block-end: 12px;
+}

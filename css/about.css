@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap);
+
+/* COSTUM PROPERTI */
+:root {
+    /* COLORS */
+    --background-color: rgb(76, 139, 207);
+    --white: white;
+    --black: hsla(0, 0%, 0%, 1);
+    --black-1: rgb(24, 23, 21);
+
+    /* FONT FAMILY */
+    --fontFamily-forum: 'Forum', cursive;
+    --fontFamily-dm_sans: 'DM Sans', sans-serif;
+
+    /* FONT WIGHT */
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    /* SHADOW */
+    --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+    /* BORDER RADIUS */
+    --radius-24: 24px;
+    --radius-circle: 50%;
+
+    /* TRANSITION */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+
+
+/* About */
+.about .container{
+    padding-top: 100px;
+}
+
+.about .section-text {
+    margin-block: 15px 30px;
+}
+
+.about .btn {
+    margin-inline: auto;
+    margin-block-start: 26px;
+}
+
+.about .container {
+    display: grid;
+    gap: 120px;
+}
+
+.about-banner {
+    position: relative;
+    margin-block-end: 120px;
+}
+
+.about-banner > .w-100 {
+    padding-inline-start: 50px;
+}
+
+.about .abs-img {
+    position: absolute;
+}
+
+.about .abs-img::before {
+    z-index: -1;
+}
+
+.about .abs-img-1 {
+    bottom: -120px;
+    left: 0;
+    width: 160px;
+    padding-block: 50px;
+}
+
+.about .abs-img-2 {
+    top: -65px;
+    right: 0;
+    overflow: hidden;
+}
+
+.about .abs-img-1::before {
+    top: 0;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    background-image: url('../Assets/img-pattern.svg');
+    background-repeat: repeat;
+}
+
+.about .abs-img-2::before {
+    inset: 0;
+    background-image: url('../Assets/badge-2-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotate360 15s linear infinite;
+}
+
+.reveal {
+    transform: translateY(30);
+    opacity: 0;
+}
+
+.about .item-active .reveal {
+    animation: smothh 1s ease forwards;
+}
+
+.about .item-active .section-subtitle {
+    animation-delay: 1000ms;
+}
+
+.about .item-active .section-title {
+    animation-delay: 1500ms;
+}
+
+.about .item-active .section-text {
+    animation-delay: 2s;
+}
+
+.about .item-active .section-labell {
+    animation-delay: 2.5s;
+}
+
+.about .item-active .section-number {
+    animation-delay: 3s;
+}
+
+.about .item-active .btn {
+    animation-delay: 3.5s;
+}
+
+@keyframes smothh {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
