@@ -1,7 +1,7 @@
 // Super Delicious Menu 
 // API
 async function tampilkanKotak(){
-    const res = await fetch("https://arya-teal.vercel.app/api/food-arrya-segara ");
+    const res = await fetch("https://arya-teal.vercel.app/api/food-arrya-segara");
     const datas = await res.json();
     console.log(datas)
     datas.forEach((data ,index) => {
@@ -23,7 +23,7 @@ async function tampilkanKotak(){
         // div
         menuCard.classList.add('menu-card-wrapper');
         menuCard.classList.add('hover-card-wrapper')
-        
+
         // figure
         cardBanner.classList.add('card-banner')
         cardBanner.classList.add('img-holder')
